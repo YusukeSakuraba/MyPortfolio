@@ -1,0 +1,94 @@
+.step-school {
+  background: url(../img/aboutsecondbg.jpg) center/cover no-repeat;
+  color: #fff;
+  padding-top: 60px;
+}
+.step-school__heading {
+  margin-bottom: 20px;
+}
+.step-school__text {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 20px;
+  @include tab {
+    font-size: 16px;
+  }
+  @include sp {
+    font-size: 14px;
+  }
+}
+.step-school__span {
+  color: $orange;
+}
+
+.step-school__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 40px;
+  @include under-tab {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.step-school__content {
+  background: #fff;
+  margin-right: 20px;
+  padding: 30px;
+  border-radius: 5px;
+  width: 33%;
+  @include tab {
+    margin: 0 0 20px 0;
+    width: 45%;
+  }
+  @include sp {
+    margin: 0 0 20px 0;
+    width: 98%;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.step-school__content-heading {
+  background: $orange;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 10px;
+  @include tab {
+    font-size: 14px;
+  }
+}
+.step-school__content-text {
+  color: #000;
+  font-weight: 600;
+  &:first-of-type {
+    font-size: 14px;
+    line-height: 22px;
+    @include tab {
+      font-size: 12px;
+      margin: 10px 0;
+    }
+  }
+  &:last-of-type {
+    font-size: 16px;
+    line-height: 26px;
+    @include tab {
+      font-size: 14px;
+    }
+  }
+}
+.step-school__bottom {
+  background: $blue;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  padding: 30px;
+  @include tab {
+    font-size: 16px;
+  }
+  @include sp {
+    font-size: 14px;
+  }
+}

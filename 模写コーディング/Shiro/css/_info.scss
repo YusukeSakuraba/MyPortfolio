@@ -1,0 +1,32 @@
+.info {
+  background: #fff;
+  padding: 80px 0 120px;
+  width: 100%;
+}
+.info__list {
+  display: flex;
+  justify-content: space-between;
+  height: 320px;
+  margin-top: 40px;
+}
+.info__img {
+  width: 50%;
+}
+.info__table {
+  border-spacing: 16px;
+  letter-spacing: 1.5px;
+  line-height: 2;
+  text-align: left;
+  width: 45%;
+  tbody {
+    vertical-align: inherit;
+  }
+  th {
+    border-right: 1px solid #a0a0a0;
+    width: 25%;
+  }
+  th,
+  td {
+    font-weight: normal;
+  }
+}

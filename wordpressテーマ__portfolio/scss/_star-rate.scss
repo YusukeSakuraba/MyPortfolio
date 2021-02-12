@@ -1,0 +1,32 @@
+.star-rating {
+  font-size: 25px;
+  position: relative;
+  @include sp {
+    font-size: 20px;
+  }
+  &.-html-css {
+    width: 8em;
+  }
+  &.-jquery {
+    width: 7em;
+  }
+  &.-bootstrap {
+    width: 8em;
+  }
+  &.-php {
+    width: 6em;
+  }
+  &.-sass {
+    width: 8em;
+  }
+}
+.star-rating-front {
+  color: #ffcc33;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.star-rating-back {
+  color: #ccc;
+}

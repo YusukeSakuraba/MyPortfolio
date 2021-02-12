@@ -1,0 +1,147 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  @include under-tab {
+    flex-direction: column;
+    width: 95%;
+  }
+  @include sp {
+    width: 98%;
+  }
+}
+.main__heading {
+  box-shadow: 1px 1px 6px #666;
+  font-size: 16px;
+  padding: 15px 10px 15px 20px;
+  width: 100%;
+  @include sp {
+    font-size: 14px;
+  }
+  &.-purple {
+    background: linear-gradient(#9e27f1, $purple);
+    color: #fff;
+    margin-bottom: 20px;
+    position: relative;
+    &::before {
+      content: "";
+      background: #fff;
+      display: inline-block;
+      width: 3px;
+      height: 25px;
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+    }
+  }
+  &.-white {
+    background: linear-gradient(#fff, #ccc);
+    border: 1px solid #fff;
+    color: $purple;
+    position: relative;
+    &::before {
+      content: "";
+      background: $purple;
+      display: inline-block;
+      width: 3px;
+      height: 25px;
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+    }
+  }
+}
+.main__table {
+  font-size: 15px;
+  width: 100%;
+  @include sp {
+    font-size: 12px;
+  }
+  &.-margin {
+    margin-bottom: 20px;
+  }
+  th {
+    font-weight: 400;
+    padding: 10px 0;
+    width: 25%;
+  }
+  td {
+    padding-left: 20px;
+    @include sp {
+      padding-left: 10px;
+    }
+  }
+  caption {
+    background: #f6f5f2;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    padding: 20px;
+    text-align: left;
+    @include sp {
+      padding: 10px;
+    }
+  }
+}
+.main__text {
+  line-height: 2;
+  @include sp {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  &.-emphasis {
+    color: $purple;
+    font-weight: 700;
+  }
+  &.-margin {
+    margin-bottom: 20px;
+    @include sp {
+      margin-bottom: 10px;
+    }
+  }
+  &.-purple {
+    color: $purple;
+  }
+  &.-bg-dark {
+    background: #e5e5e5;
+    display: inline-block;
+  }
+  &.-red {
+    color: red;
+  }
+}
+.main__content {
+  padding: 10px;
+}
+.middle-contents {
+  width: 60%;
+  @include under-tab {
+    order: 1;
+    width: 100%;
+  }
+}
+.main__link {
+  line-height: 2;
+  text-decoration: underline;
+  transition: all 0.3s;
+  @include sp {
+    font-size: 12px;
+  }
+  &:hover {
+    color: $purple;
+    text-decoration: none;
+  }
+  &.-margin {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.new {
+  background: red;
+  color: #fff;
+  font-size: 12px;
+  padding: 3px;
+}

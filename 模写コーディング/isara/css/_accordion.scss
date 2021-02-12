@@ -1,0 +1,27 @@
+.accordion__button {
+  position: relative;
+  &::after {
+    content: "\f078";
+    color: #e5e5e5;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+  }
+  &.active::after {
+    content: "\f077";
+    font-weight: bold;
+  }
+}
+.accordion__title {
+  position: relative;
+  &:hover {
+    border-bottom: 2px solid #000;
+  }
+}
+.accordion__textbox {
+  color: #333;
+  text-align: left;
+}

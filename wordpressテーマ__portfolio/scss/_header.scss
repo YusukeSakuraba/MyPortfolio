@@ -1,0 +1,116 @@
+.header__main-visual {
+  background: url(../img/header-bg.jpg) no-repeat center/cover fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+}
+// IEのみ 背景固定を無効化
+@media all and (-ms-high-contrast: none) {
+  .header {
+    background-attachment: scroll;
+  }
+}
+// テキスト
+.header__text-box {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+  @include tab {
+    width: $parent-tab;
+  }
+  @include sp {
+    width: $parent-sp;
+  }
+}
+.header__title {
+  color: $dark;
+  font-size: 60px;
+  line-height: 2;
+  text-shadow: 2px 0 0 #fff, 0 2px 0 #fff, -2px 0 0 #fff, 0 -2px 0 #fff;
+  @include tab {
+    font-size: 45px;
+  }
+  @include sp {
+    font-size: 30px;
+  }
+}
+.header__sub-title {
+  color: $dark;
+  font-size: 40px;
+  line-height: 1.5;
+  text-shadow: 2px 0 0 #fff, 0 2px 0 #fff, -2px 0 0 #fff, 0 -2px 0 #fff;
+  @include tab {
+    font-size: 30px;
+  }
+  @include sp {
+    font-size: 24px;
+  }
+}
+.header__text {
+  color: $blue;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-shadow: 2px 0 0 #fff, 0 2px 0 #fff, -2px 0 0 #fff, 0 -2px 0 #fff;
+  @include tab {
+    font-size: 30px;
+  }
+  @include sp {
+    font-size: 24px;
+  }
+}
+// ナビゲーション
+.header__nav {
+  background: $dark;
+  margin-bottom: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  @include sp {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+.header__nav-list {
+  display: flex;
+  justify-content: space-between;
+  @include sp {
+    flex-direction: column;
+    margin: 20px 0;
+    padding: 20px 0;
+  }
+}
+.header__nav-item {
+  width: 18%;
+  @include sp {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+.header__nav-link {
+  border-bottom: 3px solid #fff;
+  color: #fff;
+  display: block;
+  font-size: $item-text-pc;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.4s;
+  &:hover {
+    background: gainsboro;
+    border-bottom: 3px solid transparent;
+    color: $dark;
+  }
+  @include tab {
+    font-size: $item-text-tab;
+  }
+  @include sp {
+    font-size: $item-text-sp;
+  }
+}

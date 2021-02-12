@@ -1,0 +1,29 @@
+.real-free {
+  background: url(../img/introbottom.jpg) center bottom / cover no-repeat;
+  padding: 50px 0 150px;
+  @include sp {
+    padding: 30px 0 100px;
+    background: url(../img/introbottom.jpg) center bottom / contain no-repeat;
+  }
+}
+.real-free__heading {
+  margin-bottom: 30px;
+}
+.real-free__text {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+  margin-bottom: 30px;
+  @include tab {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  @include sp {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+.real-free__span {
+  border-bottom: 8px solid $orange;
+  font-weight: 700;
+}

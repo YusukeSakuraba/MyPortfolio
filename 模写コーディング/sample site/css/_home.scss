@@ -1,0 +1,13 @@
+.home__table {
+  padding: 0 20px 20px;
+  @include sp {
+    font-size: 12px;
+  }
+  tr {
+    display: block;
+    padding-bottom: 5px;
+  }
+  th {
+    padding-right: 20px;
+  }
+}

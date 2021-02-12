@@ -1,0 +1,83 @@
+.main {
+  background: #fff;
+  text-align: center;
+}
+.main__box-large {
+  max-width: 1200px;
+  width: 95%;
+}
+.main__box-small {
+  max-width: 800px;
+  width: 70%;
+}
+.main__h2 {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+  @include tab {
+    font-size: 24px;
+  }
+  @include sp {
+    font-size: 20px;
+  }
+}
+.main__text {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 300;
+}
+.main__br {
+  &.-pc {
+    display: block;
+    @include sp {
+      display: none;
+    }
+  }
+  &.-sp {
+    display: none;
+    @include sp {
+      display: block;
+    }
+  }
+}
+.frame-box {
+  position: relative;
+  display: inline-block;
+  padding: 20px 0;
+  margin: 0 auto;
+  @include tab {
+    width: 95%;
+  }
+  @include sp {
+    width: 95%;
+  }
+  &::before,
+  &::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+  }
+  &::before {
+    border-left: 4px solid $orange;
+    border-top: 4px solid $orange;
+    left: 0;
+    top: 0;
+  }
+  &::after {
+    border-right: 4px solid $orange;
+    border-bottom: 4px solid $orange;
+    right: 0;
+    bottom: 0;
+  }
+  &.-white {
+    &::before {
+      border-left: 4px solid #fff;
+      border-top: 4px solid #fff;
+    }
+    &::after {
+      border-right: 4px solid #fff;
+      border-bottom: 4px solid #fff;
+    }
+  }
+}

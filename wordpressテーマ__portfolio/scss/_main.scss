@@ -1,0 +1,95 @@
+.main__contents {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+  @include tab {
+    width: $parent-tab;
+  }
+  @include sp {
+    width: $parent-sp;
+  }
+}
+// h2
+.main__heading {
+  color: $dark;
+  font-size: $heading-pc;
+  line-height: 1.5;
+  &.-white {
+    color: $light;
+  }
+  @include tab {
+    font-size: $heading-tab;
+  }
+  @include sp {
+    font-size: $heading-sp;
+  }
+}
+.main__hr {
+  background: $dark;
+  border: 1px solid $dark;
+  margin: 12px auto 24px;
+  width: 40px;
+  height: 2px;
+  &.-white {
+    background: $light;
+    border: 1px solid $light;
+  }
+  @include sp {
+    border: none;
+    height: 1px;
+  }
+}
+// h2下p
+.main__text {
+  color: $dark;
+  font-size: $text-pc;
+  line-height: 2;
+  margin-bottom: 40px;
+  &.-white {
+    color: $light;
+  }
+  @include tab {
+    font-size: $text-tab;
+    margin-bottom: 20px;
+  }
+  @include sp {
+    font-size: $text-sp;
+    margin-bottom: 20px;
+  }
+}
+// list内h3
+.main__item-heading {
+  color: $dark;
+  font-size: $item-heading-pc;
+  &.-white {
+    color: $light;
+  }
+  @include tab {
+    font-size: $item-heading-tab;
+  }
+  @include sp {
+    font-size: $item-heading-sp;
+  }
+}
+// list内p
+.main__item-text {
+  color: $dark;
+  font-size: $item-text-pc;
+  &.-white {
+    color: $light;
+  }
+  @include tab {
+    font-size: $item-text-tab;
+  }
+  @include sp {
+    font-size: $item-text-sp;
+  }
+}
+// リンク
+.main__link {
+  color: #1a0dab;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}

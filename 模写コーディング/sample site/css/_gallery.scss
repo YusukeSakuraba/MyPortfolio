@@ -1,0 +1,22 @@
+.gallery__content {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  margin: 20px;
+  padding-bottom: 20px;
+  @include sp {
+    margin-left: 10px;
+  }
+}
+.gallery__text-box {
+  padding: 20px;
+  @include sp {
+    padding: 0 0 0 10px;
+  }
+}
+.gallery__img {
+  width: 250px;
+  @include sp {
+    width: 70px;
+    height: 70px;
+  }
+}

@@ -1,0 +1,85 @@
+.main__heading {
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px;
+  @include sp {
+    font-size: 12px;
+    padding: 10px;
+  }
+  &.-orange {
+    background: $orange;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  &.-white {
+    background: #fff;
+    border: 1px solid $normal;
+  }
+}
+.main__content {
+  padding: 20px;
+  @include sp {
+    padding: 10px 20px;
+  }
+}
+.main__text {
+  line-height: 2;
+  @include sp {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  &.-emphasis {
+    color: $orange;
+    font-weight: 700;
+  }
+  &.-orange {
+    color: $orange;
+  }
+  &.-bg-dark {
+    background: $bg-dark;
+    display: inline-block;
+  }
+  &.-margin {
+    margin-bottom: 20px;
+  }
+}
+.main__link {
+  text-decoration: underline;
+  transition: all 0.2s;
+  &:hover {
+    color: $orange;
+  }
+  @include sp {
+    font-size: 12px;
+  }
+}
+.main__table {
+  margin-bottom: 40px;
+  width: 100%;
+  @include sp {
+    font-size: 12px;
+  }
+  caption {
+    background: $bg-dark;
+    border: 1px solid #999;
+    border-bottom: none;
+    font-weight: 700;
+    padding: 10px;
+    text-align: left;
+  }
+  th,
+  td {
+    padding: 15px 0;
+    @include sp {
+      padding: 10px 0;
+    }
+  }
+  td {
+    padding-left: 10px;
+  }
+  th {
+    padding: 10px;
+    width: 30%;
+  }
+}

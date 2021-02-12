@@ -1,0 +1,160 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h2,
+h3,
+p {
+  color: #333;
+}
+
+section {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.header {
+  background: url(../img/背景画像@2x.png) no-repeat center/cover;
+  height: 400px;
+  position: relative;
+}
+
+.header__logo {
+  position: absolute;
+  top: 272px;
+  left: 60px;
+  width: 297px;
+  height: 68px;
+}
+
+.main__heading {
+  font-family: "游ゴシック、Bold";
+  font-size: 32px;
+  line-height: 1;
+  margin-bottom: 50px;
+}
+
+.main__heading.-white {
+  color: #fff;
+}
+
+.main__heading.-small {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.main__text {
+  font-family: "游ゴシック、Medium";
+  font-size: 16px;
+  line-height: 2;
+}
+
+.main__text-box {
+  margin: 0 auto;
+}
+
+.main-visual {
+  background: #fff;
+}
+
+.box-area {
+  background: url(../img/背景画像-「働く」をデザインする@2x.png);
+  height: 1512px;
+}
+
+.box-area__list-wrapper {
+  background: #0000004d;
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 960px;
+}
+
+.box-area__list {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.box-area__item {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 280px;
+}
+
+.box-area__text-box {
+  padding: 0 20px;
+  text-align: left;
+  width: 50%;
+}
+
+.company__list {
+  margin-top: 70px;
+}
+
+.company__img {
+  margin: 0 60px;
+}
+
+.footer {
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  padding: 23px 0 21px;
+  position: relative;
+}
+
+.footer__text {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.footer__link {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer__link:last-of-type {
+  margin-left: 19px;
+}
+
+.footer__link-box {
+  position: absolute;
+  right: 20px;
+}
+/*# sourceMappingURL=style.css.map */

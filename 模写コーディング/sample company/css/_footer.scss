@@ -1,0 +1,28 @@
+.footer {
+  background: $purple;
+}
+.footer__upper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px 0;
+  @include sp {
+    display: none;
+  }
+}
+.footer__link {
+  color: #fff;
+  font-size: 13px;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.footer__lower {
+  background: #333;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px;
+  text-align: center;
+}

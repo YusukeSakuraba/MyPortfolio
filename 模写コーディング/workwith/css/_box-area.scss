@@ -1,0 +1,27 @@
+.box-area {
+  background: url(../img/背景画像-「働く」をデザインする@2x.png);
+  height: 1512px;
+}
+.box-area__list-wrapper {
+  background: #0000004d;
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 960px;
+}
+.box-area__list {
+  max-width: 860px;
+  margin: 0 auto;
+}
+.box-area__item {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 280px;
+}
+.box-area__text-box {
+  padding: 0 20px;
+  text-align: left;
+  width: 50%;
+}
+

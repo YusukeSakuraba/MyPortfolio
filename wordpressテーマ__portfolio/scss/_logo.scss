@@ -1,0 +1,24 @@
+.c-logo {
+  font-size: 40px;
+  @include sp {
+    font-size: 24px;
+  }
+  &.-html5 {
+    color: #15aabf;
+  }
+  &.-js {
+    color: #fd7e14;
+  }
+  &.-wordpress {
+    color: #82c91e;
+  }
+  &.-php {
+    color: #be4bdb;
+  }
+  &.-sass {
+    color: #82c91e;
+  }
+  &.-github {
+    color: #15aabf;
+  }
+}

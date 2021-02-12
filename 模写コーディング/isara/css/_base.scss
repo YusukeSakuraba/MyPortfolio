@@ -1,0 +1,26 @@
+@charset "UTF-8";
+html {
+  font-size: 100%;
+}
+body {
+  background: #fff;
+  color: $black;
+  font-family: "Font Awesome 5 Free", "ヒラギノ角ゴ ProN W3",
+    "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  padding-top: 80px;
+  @include sp {
+    padding-top: 60px;
+  }
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+:focus {
+  outline: 0;
+}
+img {
+  max-width: 100%;
+}

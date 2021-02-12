@@ -1,0 +1,92 @@
+.curriculum {
+  background: url(../img/classbg.jpg) center / cover no-repeat;
+  color: #fff;
+  padding-top: 50px;
+}
+.curriculum__heading {
+  margin-bottom: 20px;
+}
+.curriculum__text {
+  font-weight: 600;
+  &:first-of-type {
+    font-size: 16px;
+    line-height: 26px;
+    @include tab {
+      font-size: 14px;
+    }
+    @include sp {
+      font-size: 13px;
+    }
+  }
+  &:last-of-type {
+    font-size: 20px;
+    line-height: 32px;
+    @include tab {
+      font-size: 16px;
+    }
+    @include sp {
+      font-size: 14px;
+    }
+  }
+}
+.curriculum__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  @include over-tab {
+    max-width: 750px;
+  }
+  margin: 20px auto 30px;
+  @include sp {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.curriculum__content {
+  border: 2px solid $blue;
+  height: 100%;
+  width: 45%;
+  @include sp {
+    width: 90%;
+    &:first-of-type {
+      margin-bottom: 30px;
+    }
+  }
+}
+.curriculum__content-heading {
+  background: $blue;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  padding: 10px;
+  @include tab {
+    font-size: 16px;
+  }
+  @include sp {
+    font-size: 14px;
+  }
+}
+.curriculum__content-list {
+  background: #fff;
+  color: $black;
+  padding: 10px;
+}
+.curriculum__content-item {
+  color: #000;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  @include tab {
+    font-size: 14px;
+  }
+  @include sp {
+    font-size: 13px;
+  }
+}
+.curriculum__bottom {
+  background: $blue;
+  padding: 30px;
+  @include tab {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,63 @@
+.header {
+  background: url(../img/header.png) no-repeat center/cover;
+  height: 620px;
+  text-align: center;
+  color: #fff;
+  padding-top: 40px;
+}
+.header__nav {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  &.transform {
+    background: #fff;
+    top: 0;
+    box-shadow:0  4px 3px -3px #a0a0a0;
+    color: #2b2b2b;
+  }
+}
+.header__nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 960px;
+  height: 64px;
+}
+.header__nav-title {
+  font-size: 36px;
+  line-height: 1.5;
+}
+.header__title {
+  font-size: 120px;
+  font-weight: normal;
+  line-height: 1.4;
+  margin-top: 136px;
+}
+.header__sub-title {
+  font-size: 16px;
+  font-family: "ヒラギノ角ゴ ProN W3";
+  line-height: 1.7;
+  position: relative;
+  display: inline-block;
+  &::before {
+    content: "";
+    background: #fff;
+    width: 12px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: -8px;
+    transform: translateX(-50%);
+  }
+  &::after {
+    content: "";
+    background: #fff;
+    width: 12px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    transform: translateX(50%);
+  }
+}

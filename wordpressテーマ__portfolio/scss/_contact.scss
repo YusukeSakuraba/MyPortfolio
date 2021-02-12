@@ -1,0 +1,76 @@
+.contact {
+  background: #f3f5f8;
+}
+.contact__table {
+  margin: 0 auto 30px;
+  width: 60%;
+  @include under-tab {
+    width: 100%;
+  }
+}
+.contact__th {
+  padding: 0 40px 20px 0;
+  text-align: right;
+  width: 30%;
+  @include under-tab {
+    padding-right: 20px;
+  }
+  @include sp {
+    padding: 0;
+    text-align: center;
+    white-space: nowrap;
+  }
+}
+.contact__tr {
+  @include sp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.contact__td {
+  text-align: left;
+}
+.contact__input,
+.contact__textarea {
+  background: #fff;
+  border: 2px solid #999;
+  border-radius: 10px;
+  font-size: $item-text-pc;
+  margin: 0 auto 10px;
+  padding: 10px;
+  width: 100%;
+  &:focus {
+    border: 2px solid $blue;
+  }
+  @include tab {
+    font-size: $item-text-tab;
+  }
+  @include sp {
+    font-size: $item-text-sp;
+  }
+}
+.contact__input {
+  &.-submit,
+  &.-back {
+    color: $dark;
+    font-size: $item-text-pc;
+    font-weight: bold;
+    margin-top: 30px;
+    transition: all 0.3s;
+    width: 30%;
+    &:hover {
+      background: #777;
+      border: 2px solid #777;
+      color: #fff;
+    }
+    @include tab {
+      font-size: $item-text-tab;
+      width: 60%;
+    }
+    @include sp {
+      font-size: $item-text-sp;
+      width: 80%;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.footer {
+  background: #ececec;
+  text-align: center;
+  padding: 50px 0;
+  @include under-tab {
+    padding-bottom: 30px;
+  }
+  @include tab {
+    font-size: 13px;
+  }
+  @include sp {
+    font-size: 12px;
+  }
+  a {
+    color: #23527c;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .snsbox {
+    margin-bottom: 30px;
+  }
+}

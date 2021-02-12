@@ -1,0 +1,75 @@
+.recruit {
+  background: $orange;
+  color: #fff;
+  font-weight: 600;
+  padding: 30px 0;
+  @include sp {
+    padding: 20px 0;
+  }
+}
+.recruit__button {
+  border-radius: 50px;
+  background: $red;
+  color: #fff;
+  display: inline-block;
+  font-size: 28px;
+  line-height: 45px;
+  margin-bottom: 50px;
+  padding: 30px 300px;
+  &:hover {
+    background: #d84940;
+  }
+  @include tab {
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    width: 90%;
+  }
+  @include sp {
+    white-space: nowrap;
+    font-size: 20px;
+    padding: 15px 0;
+    width: 100%;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+}
+.recruit__text {
+  &.-upper {
+    font-size: 20px;
+    line-height: 32px;
+    @include tab {
+      font-size: 18px;
+    }
+    @include sp {
+      font-size: 16px;
+    }
+  }
+  &.-emphasis {
+    background: #fff;
+    color: #c7254e;
+    font-size: 18px;
+    display: inline-block;
+    margin: 10px 0 40px;
+    line-height: 29px;
+    @include tab {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    @include sp {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  }
+  &.-lower {
+    font-size: 21px;
+    line-height: 34px;
+    margin-bottom: 20px;
+    @include tab {
+      font-size: 19px;
+    }
+    @include sp {
+      font-size: 16px;
+    }
+  }
+}

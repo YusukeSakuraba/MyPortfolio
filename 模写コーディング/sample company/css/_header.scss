@@ -1,0 +1,82 @@
+.header {
+  margin: 0 auto 30px;
+  max-width: 1200px;
+  @include sp {
+    margin-bottom: 20px;
+    width: 95%;
+  }
+}
+.header__logo {
+  width: 300px;
+}
+.header__text {
+  &.-purple {
+    color: $purple;
+  }
+  &.-big {
+    font-size: 20px;
+  }
+  &.-small {
+    font-size: 12px;
+  }
+}
+.header__upper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.header__right {
+  @include under-tab {
+    display: none;
+  }
+}
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  @include under-tab {
+    flex-direction: column;
+  }
+}
+
+.header__item {
+  border-left: 1px solid $gray;
+  text-align: center;
+  width: calc(100% / 6);
+  &:last-of-type {
+    border-right: 1px solid $gray;
+    @include under-tab {
+      border: none;
+    }
+  }
+  @include under-tab {
+    border: none;
+    width: 100%;
+  }
+}
+.header__link {
+  color: $purple;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  padding: 10px;
+  transition: all 0.3s;
+  @include under-tab {
+    color: #fff;
+    font-weight: 400;
+  }
+  @include pc {
+    &:hover {
+      background: $purple;
+      color: #fff;
+    }
+  }
+  span {
+    color: $normal;
+    font-size: 12px;
+    font-weight: 400;
+    @include under-tab {
+      color: #fff;
+    }
+  }
+}

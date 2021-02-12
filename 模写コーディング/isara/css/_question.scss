@@ -1,0 +1,62 @@
+.question {
+  padding: 50px 0;
+}
+.question__heading {
+  margin-bottom: 30px;
+}
+.question__content-wrapper {
+  margin: 0 auto;
+}
+//アコーディオン ボタン
+.question__button {
+  border: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 5px;
+}
+.question__accordion-title {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  padding-left: 20px;
+  @include tab {
+    font-size: 16px;
+  }
+  @include sp {
+    font-size: 14px;
+  }
+  &::before {
+    content: "\f059";
+    color: #016ea9;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    @include tab  {
+      font-size: 14px;
+    }
+    @include sp {
+      font-size: 13px;
+    }
+  }
+}
+// アコーディオン中身
+.question__content-textbox {
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  padding: 30px;
+  @include tab {
+    font-size: 14px;
+    padding: 20px;
+  }
+  @include sp {
+    font-size: 13px;
+    padding: 20px;
+  }
+}

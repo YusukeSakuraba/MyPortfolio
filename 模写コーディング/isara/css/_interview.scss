@@ -1,0 +1,127 @@
+.balloon {
+  background: $orange;
+  color: #fff;
+  margin-bottom: 50px;
+  padding: 100px 0 50px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border-top: 30px solid $orange;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+  }
+}
+.interview__circle {
+  background: #fff;
+  border-radius: 50%;
+  color: $orange;
+  display: block;
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+}
+.interview__heading {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+  @include tab {
+    font-size: 24px;
+  }
+  @include sp {
+    font-size: 20px;
+  }
+}
+.interview__text {
+  font-weight: 600;
+  margin-bottom: 20px;
+  &:first-of-type {
+    font-size: 28px;
+    line-height: 45px;
+    @include tab {
+      font-size: 24px;
+    }
+    @include sp {
+      font-size: 22px;
+    }
+  }
+  &:nth-of-type(2) {
+    font-size: 16px;
+    line-height: 26px;
+    @include tab {
+      font-size: 14px;
+    }
+    @include sp {
+      font-size: 13px;
+    }
+  }
+  &:last-of-type {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    @include tab {
+      font-size: 13px;
+    }
+    @include sp {
+      font-size: 12px;
+    }
+  }
+}
+.interview__content {
+  display: flex;
+  margin: 0 auto 30px;
+  @include pc {
+    max-width: 750px;
+  }
+  @include under-tab {
+    width: 95%;
+  }
+}
+.interview__img {
+  border: 2px solid $orange;
+  width: 230px;
+}
+.interview__content-textbox {
+  color: #777;
+  padding: 20px 0 0 20px;
+  text-align: left;
+  @include tab {
+    width: 45%;
+    padding: 10px 0 0 10px;
+  }
+}
+.interview__content-text {
+  font-weight: 400;
+  &:first-child {
+    font-size: 18px;
+    line-height: 29px;
+    @include tab {
+      font-size: 17px;
+    }
+    @include sp {
+      font-size: 14px;
+    }
+  }
+  &:last-child {
+    font-size: 15px;
+    font-style: italic;
+    line-height: 24px;
+    text-decoration: underline;
+    @include tab {
+      font-size: 14px;
+    }
+    @include sp {
+      font-size: 13px;
+    }
+  }
+}

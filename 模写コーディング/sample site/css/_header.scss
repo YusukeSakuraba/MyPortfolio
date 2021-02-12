@@ -1,0 +1,29 @@
+.header__logo {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  height: 120px;
+  padding: 40px 0;
+}
+.header__main-img {
+  border-radius: 10px;
+}
+.header__list {
+  text-align: center;
+  padding: 40px 0;
+}
+.header__nav-link {
+  border-bottom: 4px solid transparent;
+  font-size: 18px;
+  padding: 0 30px 10px;
+  transition: all 0.2s;
+  &:hover {
+    border-bottom: 4px solid $orange;
+    color: $orange;
+  }
+  @include sp {
+    display: block;
+    margin: 0 auto;
+    width: 45%;
+  }
+}

@@ -1,0 +1,33 @@
+.main-visual {
+  background: url(../img/main.jpg) center / cover no-repeat;
+  padding: 100px 0;
+  @include sp {
+    background: url(../img/mainsp.jpg) center / cover no-repeat;
+    padding: 20px 0;
+  }
+}
+.main-visual__heading {
+  font-size: 28px;
+  line-height: 45px;
+  @include tab {
+    font-size: 24px;
+  }
+  @include sp {
+    font-size: 20px;
+  }
+}
+.main-visual__logo {
+  width: 300px;
+  margin: 20px 0;
+}
+.main-visual__text {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  @include tab {
+    font-size: 18px;
+  }
+  @include sp {
+    font-size: 16px;
+  }
+}

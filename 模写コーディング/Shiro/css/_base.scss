@@ -1,0 +1,28 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+body {
+  font-family: sans-serif;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+section {
+  text-align: center;
+}
+li {
+  list-style: none;
+}
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}

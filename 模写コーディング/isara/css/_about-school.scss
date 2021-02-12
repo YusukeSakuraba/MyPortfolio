@@ -1,0 +1,79 @@
+.about-school {
+  background: $cream;
+  padding: 80px 0 50px;
+  position: relative;
+}
+.about-school__circle {
+  background: $orange;
+  border-radius: 50%;
+  color: #fff;
+  display: block;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include sp {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+  }
+}
+.about-school__heading {
+  margin-bottom: 30px;
+}
+.about-school__text {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 30px;
+  @include tab {
+    font-size: 16px;
+  }
+  @include sp {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.about-school__content-wrapper {
+  background: #fff;
+  padding: 20px 0;
+  margin: 0 auto;
+  border: 2px solid $orange;
+  @include tab {
+    width: 98%;
+  }
+}
+.about-school__content-heading {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  @include tab {
+    font-size: 16px;
+  }
+  @include sp {
+    font-size: 14px;
+  }
+}
+.about-school__content-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.about-school__content {
+  margin-right: 40px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.about-school__content-text {
+  font-size: 12px;
+  line-height: 19px;
+  font-weight: 300;
+  @include sp {
+    font-size: 10px;
+  }
+}

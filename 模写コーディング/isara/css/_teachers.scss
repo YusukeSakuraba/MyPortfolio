@@ -1,0 +1,84 @@
+.teachers {
+  background: url(../img/teacherbg.jpg) center / cover no-repeat;
+  color: #fff;
+  padding: 50px 0;
+}
+.teachers__heading {
+  margin-bottom: 40px;
+}
+.teachers__text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 250px;
+  @include tab {
+    font-size: 14px;
+  }
+  @include sp {
+    font-size: 13px;
+  }
+}
+.teachers__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  @include middle-tab {
+    flex-direction: column;
+    align-items: center;
+  }
+  @include sp {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.teachers__img {
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
+.teachers__content {
+  position: relative;
+  width: 32%;
+  @include middle-tab {
+    width: 95%;
+    margin-bottom: 200px;
+  }
+  @include sp {
+    width: 95%;
+    margin-bottom: 200px;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+.teachers__content-text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  @include tab {
+    font-size: 14px;
+  }
+  @include sp {
+    font-size: 13px;
+  }
+  &:nth-of-type(2) {
+    margin: 10px 0;
+  }
+  &:last-of-type {
+    text-align: left;
+  }
+}
+.teachers__content-textbox {
+  border: 3px solid #fff;
+  height: 350px;
+  padding: 50px 20px 20px 20px;
+  @include middle-tab {
+    height: 250px;
+  }
+  @include sp {
+    height: 250px;
+    padding-top: 40px;
+  }
+}

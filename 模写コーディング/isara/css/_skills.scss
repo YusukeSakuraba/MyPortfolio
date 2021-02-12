@@ -1,0 +1,54 @@
+.skills {
+  padding: 50px 0;
+}
+.skills__heading {
+  margin-bottom: 30px;
+}
+.skills__text {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+  @include tab {
+    font-size: 16px;
+  }
+  @include sp {
+    font-size: 14px;
+  }
+  &.-small {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    @include tab {
+      font-size: 14px;
+    }
+    @include sp {
+      font-size: 12px;
+    }
+  }
+}
+.skills__content-wrapper {
+  display: flex;
+  margin: 30px auto;
+  @include under-tab {
+    justify-content: space-between;
+  }
+  @include tab {
+    width: 95%;
+  }
+  @include sp {
+    width: 80%;
+  }
+}
+.skills__img {
+  margin-right: 30px;
+  width: 180px;
+  &:last-child {
+    margin-right: 0;
+  }
+  @include under-tab {
+    width: 20%;
+  }
+  @include sp {
+    margin-right: 0;
+  }
+}

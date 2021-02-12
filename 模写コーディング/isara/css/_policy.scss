@@ -1,0 +1,47 @@
+.policy {
+  background: url(../img/specialdetail.jpg) center/cover no-repeat;
+  color: #fff;
+  padding: 50px 0 80px;@include tab {
+    padding-bottom: 50px;
+  }
+  @include sp {
+    padding: 20px 0;
+  }
+  @include sp {
+    background: url(../img/specialdetailsp.jpg) center/cover no-repeat;
+  }
+}
+.policy__heading {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 45px;
+  margin-bottom: 30px;
+  @include tab {
+    font-size: 24px;
+  }
+  @include sp {
+    font-size: 20px;
+  }
+}
+.policy__text {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 30px;
+  @include tab {
+    font-size: 16px;
+  }
+  @include sp {
+    font-size: 14px;
+  }
+  &.-middle {
+    font-size: 28px;
+    line-height: 40px;
+    @include tab {
+      font-size: 24px;
+    }
+    @include sp {
+      font-size: 20px;
+    }
+  }
+}

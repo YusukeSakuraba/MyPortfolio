@@ -1,0 +1,14 @@
+.footer {
+  color: $normal;
+  padding-bottom: 10px;
+  text-align: center;
+  @include sp {
+    font-size: 12px;
+  }
+}
+.footer__link {
+  transition: all 0.2s;
+  &:hover {
+    color: $orange;
+  }
+}

@@ -1,0 +1,32 @@
+.home__span {
+  color: $purple;
+  margin-right: 20px;
+}
+.home__table-wrapper {
+  position: relative;
+}
+.home__table {
+  padding: 0 20px 60px;
+  tr {
+    border-bottom: 1px solid $gray;
+    display: block;
+    @include sp {
+      font-size: 12px;
+    }
+  }
+  th {
+    color: $purple;
+    font-weight: 400;
+    padding-right: 30px;
+    vertical-align: top;
+  }
+}
+.home__link {
+  display: block;
+  position: absolute;
+  bottom: 3%;
+  right: 0;
+  &::before {
+    content: "»";
+  }
+}

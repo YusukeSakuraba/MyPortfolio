@@ -1,0 +1,25 @@
+.florist {
+  background: linear-gradient(#ededed 57%, #fff 43%);
+  padding: 80px 0 40px;
+  width: 100%;
+}
+.florist__list {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.florist__item {
+  text-align: left;
+  width: 300px;
+  &:nth-last-of-type(2) {
+    margin: 0 30px;
+  }
+}
+.florist__item-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #2b2b2b;
+}
+.florist__img {
+  margin-bottom: 12px;
+}

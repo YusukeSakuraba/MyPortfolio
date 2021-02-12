@@ -1,0 +1,24 @@
+.footer {
+  background: #000;
+  display: flex;
+  font-size: 12px;
+  padding: 23px 0 21px;
+  position: relative;
+}
+.footer__text {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.footer__link {
+  color: #fff;
+  text-decoration: underline;
+  &:last-of-type {
+    margin-left: 19px;
+  }
+}
+.footer__link-box {
+  position: absolute;
+  right: 20px;
+}

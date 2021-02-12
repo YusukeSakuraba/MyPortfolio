@@ -1,0 +1,125 @@
+.flow {
+  padding: 50px 0;
+}
+.flow__heading {
+  margin-bottom: 30px;
+}
+.flow__img {
+  margin-bottom: 40px;
+  @include tab {
+    width: 90%;
+  }
+  @include sp {
+    display: none;
+  }
+}
+.flow__img-flowline {
+  @include tab {
+    width: 60%;
+  }
+  @include sp {
+    display: none;
+  }
+}
+.flow__content {
+  background: $cream;
+  display: flex;
+  margin: 0 auto;
+  padding: 20px;
+  @include tab {
+    width: 85%;
+  }
+  @include sp {
+    display: none;
+  }
+}
+.flow__content-left {
+  width: 30%;
+}
+.flow__content-heading {
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: 600;
+  @include tab {
+    font-size: 16px;
+  }
+  @include sp {
+    font-size: 14px;
+  }
+}
+.flow__content-textbox {
+  text-align: left;
+  width: 70%;
+}
+.flow__content-text {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  @include tab {
+    font-size: 13px;
+  }
+  @include sp {
+    font-size: 12px;
+  }
+  &.-bold {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    @include tab {
+      font-size: 14px;
+    }
+    @include sp {
+      font-size: 13px;
+    }
+  }
+}
+//アコーディオン ボタン
+.flow__button {
+  display: none;
+  @include sp {
+    display: block;
+    background: $cream;
+    border: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    width: 95%;
+    padding: 20px;
+    margin: 0 auto 5px;
+  }
+  img {
+    @include sp {
+      width: 30px;
+    }
+  }
+}
+.flow__accordion-title {
+  display: none;
+  @include sp {
+    display: block;
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    padding-left: 20px;
+  }
+}
+// アコーディオン中身
+.flow__content-textbox-sp {
+  display: none;
+  @include sp {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+}
+.flow__content-text-sp {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 26px;
+  &.-bold {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+}

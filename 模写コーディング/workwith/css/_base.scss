@@ -1,0 +1,30 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+body {
+  font-family: sans-serif;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+h2,
+h3,
+p {
+  color: #333;
+}
+section {
+  text-align: center;
+  padding: 100px 0;
+}

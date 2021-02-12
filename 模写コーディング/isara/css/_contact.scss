@@ -1,0 +1,52 @@
+.contact {
+  background: $orange;
+  padding: 50px 0;
+}
+#contact {
+  padding-top: 80px;
+  margin-top: -80px;
+}
+.contact__heading {
+  margin-bottom: 30px;
+}
+.contact__text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 20px;
+  @include tab {
+    font-size: 14px;
+  }
+  @include sp {
+    font-size: 13px;
+  }
+}
+input,
+textarea {
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+input[type="submit"] {
+  background: $red;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 23px;
+  line-height: 37px;
+  font-weight: 600;
+  @include tab {
+    font-size: 20px;
+  }
+  @include sp {
+    font-size: 17px;
+  }
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  @include sp {
+    width: 95%;
+  }
+}

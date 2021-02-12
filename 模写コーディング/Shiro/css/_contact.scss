@@ -1,0 +1,43 @@
+.contact {
+  background: url(../img/contact_us.png) no-repeat center/cover;
+  padding: 80px 0 99px;
+  width: 100%;
+}
+.contact__button {
+  background: #fff;
+  color: #2b2b2b;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.4;
+  margin: 40px auto 0;
+  width: 360px;
+  height: 80px;
+}
+.mail-icon {
+  background: #fff;
+  border: 1px solid #707070;
+  display: inline-block;
+  margin-right: 24px;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &::before {
+    border: 14px solid transparent;
+    border-top-color: #707070;
+  }
+  &::after {
+    left: 2px;
+    border: 12px solid transparent;
+    border-top-color: #fff;
+  }
+}

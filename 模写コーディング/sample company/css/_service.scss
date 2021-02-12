@@ -1,0 +1,68 @@
+.service__content {
+  background: linear-gradient(#fff, #e3e3e3);
+  box-shadow: 1px 1px 6px #666;
+  margin-bottom: 20px;
+  padding: 20px;
+  pointer-events: none;
+  position: relative;
+  &:hover {
+    background: #fff;
+  }
+}
+.service__link {
+  pointer-events: auto;
+  &:hover::before {
+    background: $purple;
+  }
+  &::before {
+    content: "→";
+    background: #ccc;
+    border-radius: 50%;
+    color: #fff;
+    display: block;
+    line-height: 2;
+    position: absolute;
+    bottom: 8%;
+    right: 2%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+  }
+}
+.service__heading {
+  border-bottom: 1px solid #ccc;
+  color: $purple;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+  @include sp {
+    font-size: 14px;
+  }
+  &::before {
+    content: "";
+    background: $purple;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 25px;
+  }
+}
+.service__img-text {
+  display: flex;
+}
+.service__img {
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  width: 200px;
+  @include sp {
+    width: 80px;
+    height: 70px;
+  }
+}
+.service__text {
+  @include sp {
+    font-size: 12px;
+  }
+}

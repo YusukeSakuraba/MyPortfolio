@@ -1,0 +1,28 @@
+@charset "UTF-8";
+html {
+  font-size: 100%;
+}
+body {
+  background: #fff;
+  font-family: "Font Awesome 5 Free", "ヒラギノ角ゴ ProN W3",
+    "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+}
+li {
+  list-style: none;
+}
+:focus {
+  outline: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+section {
+  padding: 80px 0;
+  text-align: center;
+  @include under-tab {
+    padding: 30px 0;
+  }
+}
